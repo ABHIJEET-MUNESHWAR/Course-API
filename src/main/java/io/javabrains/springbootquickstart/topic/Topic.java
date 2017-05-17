@@ -6,7 +6,13 @@ package io.javabrains.springbootquickstart.topic;
  * Date:    14/05/17
  * Time:    10:24 PM
  */
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Topic {
+    @Id
     private String id;
     private String name;
     private String description;
